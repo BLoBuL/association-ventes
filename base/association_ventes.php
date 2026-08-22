@@ -10,3 +10,8 @@ function association_ventes_declarer_tables_principales($tables) {
 	), 'key' => array('PRIMARY KEY' => 'id_vente'));
 	return $tables;
 }
+
+function association_ventes_declarer_tables_interfaces($interfaces) {
+	$interfaces['table_des_tables']['asso_ventes'] = 'asso_ventes';
+	return $interfaces;
+}
